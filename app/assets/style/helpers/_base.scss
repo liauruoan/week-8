@@ -2,11 +2,6 @@
 	box-sizing: border-box;
 }
 
-::placeholder {
-	opacity: 0.2;
-	font-size: 16px;
-}
-
 input:focus::placeholder {
 	color: transparent;
 }
