@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
   <meta charset="UTF-8">
@@ -19,15 +19,9 @@
 <body>
   <%- include('layout/header.ejs') -%>
 
-  <% if (brands) { %>
-    <%- include('layout/brands.ejs'); %>
-  <% } %>
-
   <%- contents %>
 
-  <% if (subscribe) { %>
-    <%- include('layout/subscribe.ejs'); %>
-  <% } %>
+  <%- include('layout/sendmail.ejs') -%>
 
   <%- include('layout/footer.ejs') -%>
 

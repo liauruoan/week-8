@@ -2,7 +2,7 @@
 @import "helpers/variables";
 @import "bootstrap/mixins";
 
-@import "bootstrap/root";
+@import "helpers/reset";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
@@ -37,7 +37,8 @@
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-
-
 @import "helpers/base";
 @import "helpers/text";
+
+@import "components/logo";
+@import "components/banner";
