@@ -121,15 +121,16 @@
 }
 
 // Card image
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: $card-img-overlay-padding;
-  @include border-radius($card-inner-border-radius);
-}
+
+// .card-img-overlay {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   padding: $card-img-overlay-padding;
+//   @include border-radius($card-inner-border-radius);
+// }
 
 .card-img,
 .card-img-top,

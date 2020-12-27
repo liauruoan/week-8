@@ -1,5 +1,11 @@
 .banner{
-    height: 736px;
-    background-image: url('../images/index-1.png');
+    height: 812px;
+    background-image: url('../images/index-9.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include media-breakpoint-up(md) {
+        height: 584px;
+    }
 }
