@@ -1,0 +1,57 @@
+.border-l-2{
+	height: 120px;
+	border-left: 2px solid #ffffff;
+
+	@include media-breakpoint-up(md) {
+        height: 212px;
+    }
+}
+
+// btn
+
+.btn-arrow{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $white;
+    position: absolute;
+    z-index: 10;
+
+    :hover{
+        cursor: pointer;
+    }
+
+    &-down{
+        right: 0;
+        top: 190px;
+        background-color: $secondary;
+    }
+
+    &-right{
+        right: -10px;
+        top: 50%;
+        background-color: $dark;
+    }
+}
+
+// Height
+
+.h-120{
+	height: 120px;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+}
+
+.h-132{
+	height: 132px;
+    overflow: hidden;
+}
+
+// Width
+
+.w-32{width: 32%;}
+.w-28{width: 27.7%;}
+.w-25{width: 24.4%;}
+.w-16{width: 15.7%;}
+// goulp 裡每個項目的百分比都輸入後整體才會顯示
+

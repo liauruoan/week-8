@@ -29,15 +29,6 @@ li{list-style:none;}
 
 p, ul{margin-bottom: 0;}
 
-.border-l-2{
-	height: 120px;
-	border-left: 2px solid #ffffff;
-
-	@include media-breakpoint-up(md) {
-        height: 212px;
-    }
-}
-
 .mobile-none{
 	display: none;
 	
@@ -46,3 +37,10 @@ p, ul{margin-bottom: 0;}
 	}
 }
 
+.media-xl-only{
+	display: none;
+	
+	@include media-breakpoint-up(xl) {
+		display: block;
+	}
+}

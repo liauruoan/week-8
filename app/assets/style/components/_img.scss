@@ -15,3 +15,16 @@
         margin: 0 auto;
 	}
 }
+
+.person-img-100{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -50px; // 圖片的 50% 寬度
+    // 讓圖片自適應容器寬度保持水平置中
+}
