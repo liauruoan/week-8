@@ -22,7 +22,10 @@ img {
 
 a{
 	text-decoration: none;
-	&:hover{text-decoration: none;}
+	transition: all 0.15s;
+	&:hover{
+		text-decoration: none;
+	}
 }
 
 li{list-style:none;}
