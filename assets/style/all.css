@@ -12182,7 +12182,10 @@ img {
      object-fit: cover; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s; }
   a:hover {
     text-decoration: none; }
 
@@ -12369,23 +12372,22 @@ input, select {
     .border-l-2 {
       height: 212px; } }
 
-.btn-arrow {
+.btn-arrow-down {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #fff;
   position: absolute;
+  right: 0;
+  top: 190px; }
+
+.btn-arrow-right {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: 50%;
   z-index: 10; }
-  .btn-arrow :hover {
-    cursor: pointer; }
-  .btn-arrow-down {
-    right: 0;
-    top: 190px;
-    background-color: #D54100; }
-  .btn-arrow-right {
-    right: -10px;
-    top: 50%;
-    background-color: #772400; }
 
 .h-120 {
   height: 120px;
