@@ -12377,8 +12377,8 @@ input, select {
   height: 44px;
   border-radius: 50%;
   position: absolute;
-  right: 0;
-  top: 190px; }
+  right: 15px;
+  bottom: -212px; }
 
 .btn-arrow-right {
   width: 44px;
