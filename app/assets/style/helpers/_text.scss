@@ -11,10 +11,13 @@
     }
 }
 
-h1 ,h2, h3, h4, h5, h6, p, a, button{
+body, h1 ,h2, h3, h4, h5, h6, p, a, button{
   font-family: 'Noto Sans TC', sans-serif;
 }
 
 input, select{
   font-family: 'Helvetica Neue', 'Roboto', sans-serif;
 }
+
+.font-weight-medium{font-weight: 500;}
+

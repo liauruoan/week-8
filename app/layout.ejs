@@ -14,11 +14,18 @@
     href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@300;400;500;700;800&family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <%- include('layout/header.ejs') -%>
+  <% if (header) { %>
+    <%- include('layout/header.ejs'); %>
+  <% } %>
+
+  <% if (profile) { %>
+    <%- include('layout/profile.ejs'); %>
+  <% } %>
 
   <%- contents %>
 
@@ -30,6 +37,8 @@
     <%- include('layout/footer.ejs'); %>
   <% } %>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>
