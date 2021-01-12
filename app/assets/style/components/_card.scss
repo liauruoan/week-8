@@ -55,3 +55,17 @@
         margin-right: 20px;
     }
 }
+
+.card-md{
+    height: 297px;
+    border-radius: 4px;
+
+    @include media-breakpoint-up(md) {
+        height: 250px;
+    }
+
+    @include media-breakpoint-up(xl) {
+		height: 255px;
+        width: 176px;
+	}
+}

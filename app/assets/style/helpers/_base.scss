@@ -40,6 +40,18 @@ p, ul{margin-bottom: 0;}
 	}
 }
 
+.mobile-only{
+	display: block;
+	
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+
+	@include media-breakpoint-up(xl) {
+		display: none;
+	}
+}
+
 .media-md-only{
 	display: none;
 	
@@ -57,5 +69,13 @@ p, ul{margin-bottom: 0;}
 	
 	@include media-breakpoint-up(xl) {
 		display: block;
+	}
+}
+
+.media-xl-none{
+	display: block;
+	
+	@include media-breakpoint-up(xl) {
+		display: none;
 	}
 }

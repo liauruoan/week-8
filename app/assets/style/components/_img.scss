@@ -21,6 +21,11 @@
     overflow: hidden;
 }
 
+.person-img-95{
+    width: 95px;
+    height: 95px;
+}
+
 .person-img-100{
     width: 100px;
     height: 100px;
@@ -30,6 +35,22 @@
     position: absolute;
     top: 70px;
     left: 50%;
-    margin-left: -50px; // 圖片的 50% 寬度
+    transform: translateX(-50%);
     // 讓圖片自適應容器寬度保持水平置中
+}
+
+.homestay-img{
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+
+    @include media-breakpoint-up(md) {
+        width: 150px;
+        height: 150px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 282px;
+        height: 282px;
+	}
 }
