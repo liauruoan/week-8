@@ -4,14 +4,16 @@
 
 .modal-content{
     background-color: #FAFAFA;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 345px;
-    height: 745px;
+    height: 700px;
     padding: 20px 24px;
 
     @include media-breakpoint-up(md) {
         width: 690px;
+        height: 839px;
         padding: 60px 60px 48px 60px;
+        margin: 20px auto;
     }
 
     @include media-breakpoint-up(xl) {

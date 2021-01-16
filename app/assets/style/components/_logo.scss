@@ -1,6 +1,15 @@
 .logo{
-    font-family: "Baloo Thambi 2";
-    color: $primary;
-    font-size: 36px;
-    font-weight: bold;
+    width: 121px;
+    height: 55px;
+    background-image: url(../images/logo.svg);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo-icon{
+    width: 40px;
+    height: 40px;
+    display: inline;
 }
