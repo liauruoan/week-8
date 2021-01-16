@@ -12611,8 +12611,19 @@ a.text-black:hover, a.text-black:focus {
     border-color: #dee2e6; } }
 
 body {
-  max-width: 1280px;
-  margin: 0 auto; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: 'Noto Sans TC', sans-serif; }
+
+input, select {
+  font-family: 'Helvetica Neue', 'Roboto', sans-serif; }
+
+body {
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; }
 
 h1, h2, h3, h4, h5, h6, p {
   color: #772400; }
@@ -12847,15 +12858,11 @@ p, ul {
   .text-xl-5xl {
     font-size: 3rem !important; } }
 
-body, h1, h2, h3, h4, h5, h6, p, a, button {
-  font-family: 'Noto Sans TC', sans-serif;
-  line-height: 1.5; }
-
-input, select {
-  font-family: 'Helvetica Neue', 'Roboto', sans-serif; }
-
 .font-weight-medium {
   font-weight: 500; }
+
+.text-80 {
+  font-size: 80px; }
 
 .border-l-2 {
   height: 120px;
@@ -12882,15 +12889,6 @@ input, select {
 
 .border-t-2 {
   border-top: 2px solid #D54100; }
-
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  display: inline; }
-
-.fixed {
-  position: fixed;
-  top: 144px; }
 
 .h-120 {
   height: 120px;
@@ -12928,19 +12926,26 @@ input, select {
 .bg-lightgray {
   background-color: #FAFAFA; }
 
+.fixed {
+  position: fixed;
+  top: 144px;
+  z-index: -1; }
+
 .modal-dialog {
   margin: 0 auto; }
 
 .modal-content {
   background-color: #FAFAFA;
-  margin: 0 auto;
+  margin: 0px auto;
   width: 345px;
-  height: 745px;
+  height: 700px;
   padding: 20px 24px; }
   @media (min-width: 768px) {
     .modal-content {
       width: 690px;
-      padding: 60px 60px 48px 60px; } }
+      height: 839px;
+      padding: 60px 60px 48px 60px;
+      margin: 20px auto; } }
   @media (min-width: 1200px) {
     .modal-content {
       width: 920px;
@@ -12996,10 +13001,18 @@ input, select {
       height: 96px; } }
 
 .logo {
-  font-family: "Baloo Thambi 2";
-  color: #F0AD25;
-  font-size: 36px;
-  font-weight: bold; }
+  width: 121px;
+  height: 55px;
+  background-image: url(../images/logo.svg);
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  display: inline; }
 
 .pet-bg-img {
   background-image: url("../images/index-1.png");

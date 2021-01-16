@@ -23,26 +23,26 @@
     <header class="bg-white sticky-top ">
   <div class="container">
     <nav class="navbar navbar-expand-md px-0 py-0 bg-none d-flex">
-      <a class="navbar-brand logo mr-0" href="index.html">PETPET</a>
+      <a class="logo mr-0" href="index.html">PETPET</a>
       <button class="navbar-toggler px-0 py-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="material-icons text-primary text-4xl font-weight-bold mb-0 py-0">menu</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-block d-md-none">
-          <a class="nav-link" href="service.html">預約服務</a>
-          <a class="nav-link ml-md-13" href="#">成為寵物保姆</a>
-          <a class="nav-link ml-md-13" href="login.html">登入</a>
-        </div>
+        <ul class="navbar-nav d-block d-md-none">
+          <li><a class="nav-link" href="service.html">預約服務</a></li>
+          <li><a class="nav-link ml-md-13" href="#">成為寵物保姆</a></li>
+          <li><a class="nav-link ml-md-13" href="login.html">登入</a></li>
+        </ul>
       </div>
 
       <div class="collapse navbar-collapse align-self-end align-self-center" >
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link" href="service.html">預約服務</a>
-          <a class="nav-link ml-md-13" href="#">成為寵物保姆</a>
-          <a class="nav-link ml-md-13" href="login.html">登入</a>
-        </div>
+        <ul class="navbar-nav ml-auto">
+          <li><a class="nav-link" href="service.html">預約服務</a></li>
+          <li><a class="nav-link ml-md-13" href="#">成為寵物保姆</a></li>
+          <li><a class="nav-link ml-md-13" href="login.html">登入</a></li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -133,7 +133,7 @@
                                     </ul>
                                     <h4 class="font-weight-bold mb-4">預約項目</h4>
                                     <div>
-                                        <div class="d-flex align-items-center mb-8">
+                                        <div class="d-flex align-items-center mb-7">
                                             <img src="./assets/images/homestay-3.jpeg" alt="" class="homestay-img">
                                             <ul class="ml-4">
                                                 <li class="text-lg text-dark font-weight-bold">毛孩好家</li>
@@ -149,7 +149,7 @@
                                             </ul>
                                         </div>
 
-                                        <ul class="d-flex justify-content-between mb-8">
+                                        <ul class="d-flex justify-content-between mb-7">
                                             <li>
                                                 <a href=""
                                                     class="d-block cube shadow-sm border-3-secondary text-center pt-3">
@@ -189,7 +189,7 @@
                                             </select>
                                             <span>共 1 晚</span>
                                         </div>
-                                        <ul class="d-flex justify-content-between mb-13">
+                                        <ul class="d-flex justify-content-between mb-5">
                                             <li>
                                                 <p class="text-black mb-1">毛孩數量</p>
                                                 <select class="custom-select " id="inlineFormCustomSelect">
@@ -222,7 +222,7 @@
                                         data-toggle="modal" data-target="#exampleModal-1">下一步</button>
                                 </div>
 
-                                <!------- Modal 預約資料 ------->
+                                <!------- mobile 預約資料 ------->
                                 <div class="modal fade" id="exampleModal-1" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -242,8 +242,8 @@
                                                         <div class="dot"></div>
                                                     </li>
                                                 </ul>
-                                                <h4 class="font-weight-bold mb-4">預約項目</h4>
-                                                <div class="d-flex align-items-center mb-8">
+                                                <h4 class="font-weight-bold mb-3">預約資料</h4>
+                                                <div class="d-flex align-items-center mb-5">
                                                     <img src="./assets/images/homestay-3.jpeg" alt=""
                                                         class="homestay-img">
                                                     <ul class="ml-4">
@@ -262,44 +262,131 @@
                                                 </div>
                                             </div>
 
-                                            <form class="mb-4">
-                                                <div class="form-group">
+                                            <form class="mb-2">
+                                                <div class="form-group mb-4">
                                                     <label for="petname" class="mb-1">毛孩姓名</label>
-                                                    <input type="text" class="form-control" id="petname"
+                                                    <input type="text" class="form-control py-1" id="petname"
                                                         aria-describedby="" placeholder="請輸入毛孩姓名">
                                                 </div>
-                                                <div class="form-group">
+                                                <div class="form-group mb-4">
                                                     <label for="name" class="mb-1">飼主姓名</label>
-                                                    <input type="text" class="form-control"
-                                                        id="name" placeholder="請輸入飼主姓名">
+                                                    <input type="text" class="form-control py-1" id="name"
+                                                        placeholder="請輸入飼主姓名">
                                                 </div>
-                                                <div class="form-group">
+                                                <div class="form-group mb-4">
                                                     <label for="email" class="mb-1">Email</label>
-                                                    <input type="email" class="form-control" id="email"
+                                                    <input type="email" class="form-control py-1" id="email"
                                                         aria-describedby="" placeholder="example@gmail.com">
                                                 </div>
-                                                <div class="form-group">
+                                                <div class="form-group mb-4">
                                                     <label for="phone" class="mb-1">聯絡電話</label>
-                                                    <input type="number" class="form-control"
-                                                        id="phone" placeholder="0912-345-678">
+                                                    <input type="number" class="form-control py-1" id="phone"
+                                                        placeholder="0912-345-678">
+                                                </div>
+                                            </form>
+
+                                            <div class="modal-footer justify-content-center border-0 text-center p-0">
+                                                <a href="" class="text-secondary mb-3">返回</a>
+                                                <button type="button" class="btn btn-secondary btn-block text-lg m-0"
+                                                    data-toggle="modal" data-target="#exampleModal-3">下一步</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!------- mobile 付款資訊 ------->
+                                <div class="modal fade" id="exampleModal-3" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="mobile-only modal-content border-0">
+                                            <div class="modal-body p-0">
+                                                <ul class="d-flex justify-content-around border-t-2 py-1 mb-4">
+                                                    <li class="font-weight-light position-relative">
+                                                        預約項目
+                                                        <div class="dot"></div>
+                                                    </li>
+                                                    <li class="font-weight-light position-relative">
+                                                        預約資料
+                                                        <div class="dot"></div>
+                                                    </li>
+                                                    <li class="font-weight-medium position-relative">
+                                                        付款資訊
+                                                        <div class="dot"></div>
+                                                    </li>
+                                                </ul>
+                                                <h4 class="font-weight-bold mb-4">預約資料</h4>
+                                                <div class="d-flex align-items-center mb-8">
+                                                    <img src="./assets/images/homestay-3.jpeg" alt=""
+                                                        class="homestay-img">
+                                                    <ul class="ml-4">
+                                                        <li class="text-lg text-dark font-weight-bold">毛孩好家
+                                                        </li>
+                                                        <li>
+                                                            <span class="material-icons text-primary">star
+                                                                star star
+                                                                star
+                                                                star</span>
+                                                        </li>
+                                                        <li class="d-flex">
+                                                            <span
+                                                                class="material-icons text-secondary text-lg mt-1 mr-2">place</span>
+                                                            <p>高雄市苓雅區、新興區、前鎮區</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <form class="mb-16">
+                                                <div class="form-group">
+                                                    <label for="credit-card" class="mb-1">信用卡帳號</label>
+                                                    <input type="number" class="form-control" id="credit-card"
+                                                        aria-describedby="" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="effective-date" class="mb-1">有效日期</label>
+                                                    <input type="number" class="form-control" id="effective-date"
+                                                        placeholder="(MM/YY)">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="security-code" class="mb-1">安全碼</label>
+                                                    <input type="number" class="form-control" id="security-code"
+                                                        aria-describedby="" placeholder="***">
                                                 </div>
                                             </form>
 
                                             <div class="modal-footer justify-content-center border-0 text-center p-0">
                                                 <a href="" class="text-secondary mb-4">返回</a>
                                                 <button type="button" class="btn btn-secondary btn-block text-lg m-0"
-                                                    data-toggle="modal" data-target="#exampleModal-1">下一步</button>
+                                                    data-toggle="modal" data-target="#exampleModal-5">下一步</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!------- mobile 預約成功! ------->
+                                <div class="modal fade" id="exampleModal-5" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="mobile-only modal-content d-flex flex-column align-items-center justify-content-center  border-0">
+                                            <div class="d-flex flex-column align-items-center p-0">
+                                                <span class="material-icons text-primary text-80">pets</span>
+                                                <h4 class="font-weight-bold mb-4">預約成功!</h4>
+                                                <p class="mb-5">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+                                                <a href="profile.html" class="w-100">
+                                                    <button type="button"
+                                                        class="btn btn-secondary btn-block text-lg m-0">前往會員頁</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!----------- md ----------->
+                            <!-------------- md -------------->
                             <div class="media-md-only modal-content border-0">
                                 <div class="modal-body p-0">
                                     <h4 class="font-weight-bold mb-8">預約項目</h4>
-                                    <div class="mb-18">
+                                    <div class="mb-12">
                                         <div class="d-flex align-items-center mb-7">
                                             <img src="./assets/images/homestay-3.jpeg" alt="" class="homestay-img">
                                             <ul class="ml-10">
@@ -363,7 +450,7 @@
                                             <span>共 1 晚</span>
                                         </div>
 
-                                        <ul class="d-flex mb-13">
+                                        <ul class="d-flex">
                                             <li class="mr-8">
                                                 <p class="text-black mb-1">毛孩數量</p>
                                                 <select class="custom-select " id="inlineFormCustomSelect">
@@ -405,8 +492,169 @@
                                         </li>
                                     </ul>
                                 </div>
+
                                 <div class="modal-footer justify-content-end border-0 text-center p-0">
-                                    <button type="button" class="btn btn-secondary text-lg px-19 m-0">下一步</button>
+                                    <button type="button" class="btn btn-secondary text-lg px-19 m-0"
+                                        data-toggle="modal" data-target="#exampleModal-2">下一步</button>
+                                </div>
+
+                                <!------- md 預約資料 ------->
+                                <div class="modal fade" id="exampleModal-2" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="media-md-only modal-content border-0">
+                                            <div class="modal-body p-0">
+                                                <h4 class="font-weight-bold mb-4">預約資料</h4>
+                                                <div class="d-flex align-items-center mb-8">
+                                                    <img src="./assets/images/homestay-3.jpeg" alt=""
+                                                        class="homestay-img">
+                                                    <ul class="ml-4">
+                                                        <li class="text-lg text-dark font-weight-bold">毛孩好家</li>
+                                                        <li>
+                                                            <span class="material-icons text-primary">star star star
+                                                                star
+                                                                star</span>
+                                                        </li>
+                                                        <li class="d-flex">
+                                                            <span
+                                                                class="material-icons text-secondary text-lg mt-1 mr-2">place</span>
+                                                            <p>高雄市苓雅區、新興區、前鎮區</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <form class="mb-12">
+                                                <div class="form-group">
+                                                    <label for="petname" class="mb-1">毛孩姓名</label>
+                                                    <input type="text" class="form-control" id="petname"
+                                                        aria-describedby="" placeholder="請輸入毛孩姓名">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name" class="mb-1">飼主姓名</label>
+                                                    <input type="text" class="form-control" id="name"
+                                                        placeholder="請輸入飼主姓名">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email" class="mb-1">Email</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        aria-describedby="" placeholder="example@gmail.com">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone" class="mb-1">聯絡電話</label>
+                                                    <input type="number" class="form-control" id="phone"
+                                                        placeholder="0912-345-678">
+                                                </div>
+                                            </form>
+
+                                            <ul class="d-flex justify-content-around border-t-2 py-1 mb-8">
+                                                <li class="font-weight-light position-relative">
+                                                    預約項目
+                                                    <div class="dot"></div>
+                                                </li>
+                                                <li class="font-weight-medium position-relative">
+                                                    預約資料
+                                                    <div class="dot"></div>
+                                                </li>
+                                                <li class="font-weight-light position-relative">
+                                                    付款資訊
+                                                    <div class="dot"></div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="modal-footer justify-content-end border-0 text-center p-0">
+                                                <button type="button" class="btn btn-secondary text-lg px-19 m-0"
+                                                    data-toggle="modal" data-target="#exampleModal-4">下一步</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!------- md 付款資訊 ------->
+                                <div class="modal fade" id="exampleModal-4" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="media-md-only modal-content border-0">
+                                            <div class="modal-body p-0">
+                                                <h4 class="font-weight-bold mb-4">付款資訊</h4>
+                                                <div class="d-flex align-items-center mb-8">
+                                                    <img src="./assets/images/homestay-3.jpeg" alt=""
+                                                        class="homestay-img">
+                                                    <ul class="ml-4">
+                                                        <li class="text-lg text-dark font-weight-bold">毛孩好家
+                                                        </li>
+                                                        <li>
+                                                            <span class="material-icons text-primary">star
+                                                                star star
+                                                                star
+                                                                star</span>
+                                                        </li>
+                                                        <li class="d-flex">
+                                                            <span
+                                                                class="material-icons text-secondary text-lg mt-1 mr-2">place</span>
+                                                            <p>高雄市苓雅區、新興區、前鎮區</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <form class="mb-22">
+                                                <div class="form-group">
+                                                    <label for="credit-card" class="mb-1">信用卡帳號</label>
+                                                    <input type="number" class="form-control" id="credit-card"
+                                                        aria-describedby="" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="effective-date" class="mb-1">有效日期</label>
+                                                    <input type="text" class="form-control" id="effective-date"
+                                                        placeholder="(MM/YY)">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="security-code" class="mb-1">安全碼</label>
+                                                    <input type="email" class="form-control" id="security-code"
+                                                        aria-describedby="" placeholder="***">
+                                                </div>
+                                            </form>
+
+                                            <ul class="d-flex justify-content-around border-t-2 py-1 mb-8">
+                                                <li class="font-weight-light position-relative">
+                                                    預約項目
+                                                    <div class="dot"></div>
+                                                </li>
+                                                <li class="font-weight-light position-relative">
+                                                    預約資料
+                                                    <div class="dot"></div>
+                                                </li>
+                                                <li class="font-weight-medium position-relative">
+                                                    付款資訊
+                                                    <div class="dot"></div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="modal-footer justify-content-end border-0 text-center p-0">
+                                                <button type="button" class="btn btn-secondary text-lg px-19 m-0"
+                                                    data-toggle="modal" data-target="#exampleModal-6">下一步</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!------- md 預約成功! ------->
+                                <div class="modal fade" id="exampleModal-6" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="media-md-only modal-content d-flex flex-column align-items-center justify-content-center border-0">
+                                            <div class="d-flex flex-column align-items-center p-0">
+                                                <span class="material-icons text-primary text-80">pets</span>
+                                                <h4 class="font-weight-bold mb-4">預約成功!</h4>
+                                                <p class="mb-5">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+                                                <a href="profile.html" class="text-center">
+                                                    <button type="button"
+                                                        class="btn btn-secondary text-lg px-22 m-0">前往會員頁</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -702,15 +950,14 @@
                 <button class="btn btn-outline-secondary mr-10 px-16" type="button">聯繫</button>
                 <!-- Button trigger modal -->
                 <button class="btn btn-secondary px-19" type="button" data-toggle="modal"
-                    data-target="#exampleModal">立刻預約</button>
+                    data-target="#exampleModal-7">立刻預約</button>
             </div>
 
             <!-- Modal 預約項目 -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
 
-                    <!-- xl -->
                     <div class="modal-content border-0">
                         <div class="modal-body p-0">
                             <h4 class="font-weight-bold mb-8">預約項目</h4>
@@ -823,30 +1070,32 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="col-6 ml-auto">
-            <!-- Slider main container -->
-            <div class="swiper-container mb-4">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <img src="./assets/images/homestay-3.jpeg" alt="" class="swiper-slide">
-                    <img src="./assets/images/index-5.jpeg" alt="" class="swiper-slide">
-                    <img src="./assets/images/detail-1.jpeg" alt="" class="swiper-slide">
-                    <img src="./assets/images/detail-2.jpeg" alt="" class="swiper-slide">
+            <section><!----------------- swiper ----------------->
+                <!-- Slider main container -->
+                <div class="swiper-container mb-4">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <img src="./assets/images/homestay-3.jpeg" alt="" class="swiper-slide">
+                        <img src="./assets/images/index-5.jpeg" alt="" class="swiper-slide">
+                        <img src="./assets/images/detail-1.jpeg" alt="" class="swiper-slide">
+                        <img src="./assets/images/detail-2.jpeg" alt="" class="swiper-slide">
+                    </div>
                 </div>
-            </div>
+                <div class="swiper d-flex">
+                    <img src="./assets/images/homestay-3.jpeg" alt="" class="mr-3">
+                    <img src="./assets/images/index-5.jpeg" alt="" class="mr-3">
+                    <img src="./assets/images/detail-1.jpeg" alt="" class="mr-3">
+                    <img src="./assets/images/detail-2.jpeg" alt="">
+                </div>
+            </section>
 
-            <div class="swiper d-flex">
-                <img src="./assets/images/homestay-3.jpeg" alt="" class="mr-3">
-                <img src="./assets/images/index-5.jpeg" alt="" class="mr-3">
-                <img src="./assets/images/detail-1.jpeg" alt="" class="mr-3">
-                <img src="./assets/images/detail-2.jpeg" alt="">
-            </div>
-
+            <!----------------- 關於 ----------------->
             <section class="mb-18">
                 <h4 class="font-weight-bold mb-4">關於</h4>
-                <p class="font-weight-medium mb-13">家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。 目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！</p>
+                <p class="font-weight-medium mb-13">家中有5隻貓寶貝，對貓咪有瘋狂的熱愛。目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！</p>
                 <h4 class="font-weight-bold mb-4">經歷</h4>
                 <p class="font-weight-medium mb-13">曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。</p>
                 <h4 class="font-weight-bold mb-4">技能證照</h4>
@@ -859,6 +1108,7 @@
                 <p class="font-weight-medium">高雄市</p>
             </section>
 
+            <!----------------- 飼主評論（30） ----------------->
             <section class="mb-18">
                 <h3 class="font-weight-bold mb-8">飼主評論（30）</h3>
                 <div class="row">
@@ -933,6 +1183,7 @@
                 <a href="" class="d-block text-lg font-weight-medium text-right">查看更多</a>
             </section>
 
+            <!----------------- 其他高雄市寄宿的寵物保姆 ----------------->
             <section class="mb-18">
                 <h3 class="font-weight-bold mb-8">其他 <a href="" class="text-secondary border-b-secondary">高雄市</a> <a
                         href="" class="text-secondary border-b-secondary">寄宿</a> 的寵物保姆</h3>
@@ -1018,12 +1269,13 @@
         <div class="row">
             <div class="col-md-9 col-lg-6">
                 <p class="text-xl text-md-4xl font-weight-bold text-dark mb-3">有任何我們能幫助您的嗎？</p>
-                <p class="text-base text-md-lg text-dark mb-5">
+                <label for="sendmail" class="text-base text-md-lg text-dark mb-5">
                     輸入電子信箱<br>
                     將有專業人員在線幫您解決所有問題
-                </p>
+                </label>
+
                 <div class="input-group">
-                    <input type="text" class="form-control py-5" placeholder="example@gmail.com"
+                    <input id="sendmail" type="text" class="form-control py-5" placeholder="example@gmail.com"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
                         <button class="btn btn-secondary px-14 px-md-17" type="button" id="button-addon2">送出</button>

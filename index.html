@@ -23,26 +23,26 @@
     <header class="bg-white sticky-top ">
   <div class="container">
     <nav class="navbar navbar-expand-md px-0 py-0 bg-none d-flex">
-      <a class="navbar-brand logo mr-0" href="index.html">PETPET</a>
+      <a class="logo mr-0" href="index.html">PETPET</a>
       <button class="navbar-toggler px-0 py-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="material-icons text-primary text-4xl font-weight-bold mb-0 py-0">menu</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-block d-md-none">
-          <a class="nav-link" href="service.html">預約服務</a>
-          <a class="nav-link ml-md-13" href="#">成為寵物保姆</a>
-          <a class="nav-link ml-md-13" href="login.html">登入</a>
-        </div>
+        <ul class="navbar-nav d-block d-md-none">
+          <li><a class="nav-link" href="service.html">預約服務</a></li>
+          <li><a class="nav-link ml-md-13" href="#">成為寵物保姆</a></li>
+          <li><a class="nav-link ml-md-13" href="login.html">登入</a></li>
+        </ul>
       </div>
 
       <div class="collapse navbar-collapse align-self-end align-self-center" >
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link" href="service.html">預約服務</a>
-          <a class="nav-link ml-md-13" href="#">成為寵物保姆</a>
-          <a class="nav-link ml-md-13" href="login.html">登入</a>
-        </div>
+        <ul class="navbar-nav ml-auto">
+          <li><a class="nav-link" href="service.html">預約服務</a></li>
+          <li><a class="nav-link ml-md-13" href="#">成為寵物保姆</a></li>
+          <li><a class="nav-link ml-md-13" href="login.html">登入</a></li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -52,6 +52,7 @@
   
 
   
+<!----------------- banner ----------------->
 <section class="d-xl-none mb-13">
     <div class="pet-img d-flex mb-4">
         <img src="./assets/images/index-1.png" alt="" class="align-self-center">
@@ -69,7 +70,6 @@
                         <option value="2">狗狗</option>
                     </select>
                 </div>
-
                 <div class="input-group mb-5">
                     <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
                         <option selected>服務</option>
@@ -88,7 +88,6 @@
                         <option value="4">中壢區</option>
                     </select>
                 </div>
-
                 <div class="input-group-append">
                     <button class="btn btn-secondary btn-block" type="button">搜尋</button>
                 </div>
@@ -105,51 +104,53 @@
                     <div class="btn btn-secondary btn-arrow-down border-0 p-0">
                         <span class="material-icons text-4xl">arrow_drop_down</span>
                     </div>
-                    
+
                     <h1 class="font-weight-bold mb-5">寵物服務，盡在 PETPET</h1>
                     <p class="text-xl mb-14">當您的毛孩有需要時，幫您找到最合適的服務者！</p>
-    
+
                     <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <select class="custom-select" id="inputGroupSelect04"
+                            aria-label="Example select with button addon">
                             <option selected>品種</option>
                             <option value="1">貓貓</option>
                             <option value="2">狗狗</option>
                         </select>
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <select class="custom-select" id="inputGroupSelect04"
+                            aria-label="Example select with button addon">
                             <option selected>服務</option>
                             <option value="1">寵物寄宿</option>
                             <option value="2">寵物到府保姆</option>
                             <option value="3">寵物美容洗澡</option>
                             <option value="4">寵物行為訓練</option>
                         </select>
-                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <select class="custom-select" id="inputGroupSelect04"
+                            aria-label="Example select with button addon">
                             <option selected>地區</option>
                             <option value="1">林口區</option>
                             <option value="2">桃園區</option>
                             <option value="3">南崁區</option>
                             <option value="4">中壢區</option>
                         </select>
-                        
+
                         <div class="input-group-append">
                             <button class="btn btn-secondary px-8" type="button">搜尋</button>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
+<!----------------- 本月熱門保姆 ----------------->
 <section class="container mb-13 mb-md-18">
     <h2 class="font-weight-bold mb-1">本月熱門保姆</h2>
     <p class="mb-4">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
-    <div class="row position-relative">
-        <div class="mobile-none btn btn-dark btn-arrow-right border-0 p-0">
+    <ul class="row position-relative">
+        <li class="mobile-none btn btn-dark btn-arrow-right border-0 p-0">
             <span class="material-icons text-4xl">arrow_right</span>
-        </div>
-
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
+        </li>
+        <li class="col-12 col-md-4 mb-4 mb-md-0">
             <div class="card shadow">
                 <img src="./assets/images/index-2.jpeg" class="card-img-top h-120 border-5-white mb-14" alt="">
                 <img src="./assets/images/person-1.png" alt="" class="person-img-100">
@@ -171,9 +172,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
+        </li>
+        <li class="col-12 col-md-4 mb-4 mb-md-0">
             <div class="card shadow">
                 <div class="card-img-top h-120 border-5-white d-flex align-items-center mb-14">
                     <img src="./assets/images/index-3.jpeg" class="mt-22" alt="">
@@ -198,9 +198,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-12 col-md-4">
+        </li>
+        <li class="col-12 col-md-4">
             <div class="card shadow">
                 <img src="./assets/images/index-4.jpeg" class="card-img-top h-120 border-5-white mb-14" alt="">
                 <img src="./assets/images/person-3.png" alt="" class="person-img-100">
@@ -222,10 +221,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 </section>
 
+<!----------------- 線上預約 ----------------->
 <section class="container mb-13 mb-md-18">
     <h2 class="font-weight-bold mb-1">線上預約</h2>
     <p class="mb-4">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
@@ -233,7 +233,7 @@
     <div class="container d-md-none px-0">
         <ul>
             <li class="card h-132 mb-1">
-                <a href="#" class="h-100">
+                <a href="service.html" class="h-100">
                     <img class="card-img" src="./assets/images/index-5.jpeg" alt="">
                     <p class="card-img-overlay">寵物寄宿</p>
                 </a>
@@ -268,7 +268,7 @@
     <div class="mobile-none">
         <ul class="d-flex justify-content-between">
             <li class="card card-img-height w-32 mr-md-1 mr-lg-2">
-                <a href="#" class="h-100">
+                <a href="service.html" class="h-100">
                     <img class="card-img" src="./assets/images/index-5.jpeg" alt="">
                     <p class="card-img-overlay">寵物寄宿</p>
                 </a>
@@ -305,6 +305,7 @@
     </div>
 </section>
 
+<!----------------- PETPET目前已有 ----------------->
 <section class="banner pt-16 pt-md-18 mb-16 mb-md-18">
     <div class="container">
         <p class="text-4xl font-weight-bold text-white mb-14 mb-md-20">PETPET目前已有</p>
@@ -331,23 +332,24 @@
     </div>
 </section>
 
+<!----------------- 預約流程 ----------------->
 <section class="container mb-18">
     <h2 class="font-weight-bold mb-1">預約流程</h2>
     <p class="text-lg mb-4 mb-md-7">輕鬆三步驟，立即獲取最佳服務！</p>
-    <div class="row">
-        <div class="col-12 col-md-4 mb-11 mb-md-0">
+    <ul class="row">
+        <li class="col-12 col-md-4 mb-11 mb-md-0">
             <p class="text-lg mb-1">1.查詢想要的服務</p>
             <img src="./assets/images/order-1.png" alt="order-img">
-        </div>
-        <div class="col-12 col-md-4 mb-11 mb-md-0">
+        </li>
+        <li class="col-12 col-md-4 mb-11 mb-md-0">
             <p class="text-lg mb-1">2.找到合適的保姆</p>
             <img src="./assets/images/order-2.png" alt="order-img">
-        </div>
-        <div class="col-12 col-md-4">
+        </li>
+        <li class="col-12 col-md-4">
             <p class="text-lg mb-1">3.填寫資料完成預約</p>
             <img src="./assets/images/order-3.png" alt="order-img">
-        </div>
-    </div>
+        </li>
+    </ul>
 </section>
 
   
@@ -356,12 +358,13 @@
         <div class="row">
             <div class="col-md-9 col-lg-6">
                 <p class="text-xl text-md-4xl font-weight-bold text-dark mb-3">有任何我們能幫助您的嗎？</p>
-                <p class="text-base text-md-lg text-dark mb-5">
+                <label for="sendmail" class="text-base text-md-lg text-dark mb-5">
                     輸入電子信箱<br>
                     將有專業人員在線幫您解決所有問題
-                </p>
+                </label>
+
                 <div class="input-group">
-                    <input type="text" class="form-control py-5" placeholder="example@gmail.com"
+                    <input id="sendmail" type="text" class="form-control py-5" placeholder="example@gmail.com"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
                         <button class="btn btn-secondary px-14 px-md-17" type="button" id="button-addon2">送出</button>
