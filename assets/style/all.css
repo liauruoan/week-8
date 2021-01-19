@@ -12890,6 +12890,9 @@ p, ul {
 .border-t-2 {
   border-top: 2px solid #D54100; }
 
+.min-vh-100 {
+  min-height: calc(100vh - 64px); }
+
 .h-120 {
   height: 120px;
   overflow: hidden; }
@@ -12926,13 +12929,11 @@ p, ul {
 .bg-lightgray {
   background-color: #FAFAFA; }
 
-.fixed {
-  position: fixed;
-  top: 144px;
-  z-index: -1; }
+.position-fixed {
+  position: fixed; }
 
-.modal-dialog {
-  margin: 0 auto; }
+.z-index-1 {
+  z-index: 100; }
 
 .modal-content {
   background-color: #FAFAFA;
@@ -12944,8 +12945,7 @@ p, ul {
     .modal-content {
       width: 690px;
       height: 839px;
-      padding: 60px 60px 48px 60px;
-      margin: 20px auto; } }
+      padding: 60px 60px 48px 60px; } }
   @media (min-width: 1200px) {
     .modal-content {
       width: 920px;
@@ -13015,9 +13015,9 @@ p, ul {
   display: inline; }
 
 .pet-bg-img {
-  background-image: url("../images/index-1.png");
-  background-repeat: no-repeat;
-  height: 736px; }
+  background: url("../images/index-1.png") no-repeat center center/cover;
+  position: absolute;
+  width: 43%; }
 
 .pet-img {
   height: 352px;
@@ -13113,7 +13113,12 @@ p, ul {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   z-index: 10;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .card-img-overlay:hover {
+    background: transparent; }
 
 .card-sm {
   display: -webkit-box;
