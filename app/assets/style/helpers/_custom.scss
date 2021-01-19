@@ -29,6 +29,10 @@
 // Height
 
 
+.min-vh-100 {
+    min-height: calc(100vh - 64px);
+}
+
 .h-120{
 	height: 120px;
     overflow: hidden;
@@ -55,6 +59,7 @@
 }
 
 
+
 // Width
 
 .w-32{width: 32%;}
@@ -64,6 +69,7 @@
 // group 裡每個項目的百分比都輸入後整體才會顯示
 
 
+
 // color
 
 .bg-lightgray{background-color: #FAFAFA;}
@@ -71,9 +77,10 @@
 
 // other
 
-.fixed{
+.position-fixed{
+    // 注意容器高度
     position: fixed;
-    top: 144px;
-    z-index: -1;
 }
 
+.z-index-1{z-index: 100;}
+// 容器同時要設定 position:relative，物件才會壓在上面

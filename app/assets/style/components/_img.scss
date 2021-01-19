@@ -1,8 +1,7 @@
 .pet-bg-img{
-    background-image: url('../images/index-1.png');
-    background-repeat: no-repeat;
-    
-    height: 736px;
+    background: url('../images/index-1.png') no-repeat center center/cover;
+    position: absolute;
+    width: 43%;
 }
 
 .pet-img{
