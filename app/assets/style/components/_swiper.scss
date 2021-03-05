@@ -1,35 +1,35 @@
 .swiper-container {
-    height: 282px;
-    width: auto;
-    border-radius: 4px;
+  height: 282px;
+  width: auto;
+  border-radius: 4px;
 
-    @include media-breakpoint-up(md) {
-        height: 271px;
-    }
+  @include media-breakpoint-up(md) {
+      height: 271px;
+  }
 
-    @include media-breakpoint-up(xl) {
-		height: 440px;
-	}
+  @include media-breakpoint-up(xl) {
+  height: 440px;
+}
 }
 
 .swiper{
-    @include media-breakpoint-up(xl) {
-        margin-bottom: 188px;
-    }
-    
-    img{
-        width: 82px;
-        height: 82px;
-        border-radius: 4px;
+  @include media-breakpoint-up(xl) {
+      margin-bottom: 188px;
+  }
+  
+  img{
+      width: 82px;
+      height: 82px;
+      border-radius: 4px;
 
-        @include media-breakpoint-up(md) {
-            width: 63px;
-            height: 63px;
-        }
+      @include media-breakpoint-up(md) {
+          width: 63px;
+          height: 63px;
+      }
 
-        @include media-breakpoint-up(xl) {
-            width: 96px;
-            height: 96px;
-        }
-    }
+      @include media-breakpoint-up(xl) {
+          width: 96px;
+          height: 96px;
+      }
+  }
 }
